@@ -18,6 +18,6 @@ int main() {
     else{
         grade = F;
     }
-    printf("%c",grade)
+    printf("%c",grade);
     return 0;
 }
