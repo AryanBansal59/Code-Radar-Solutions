@@ -1,21 +1,23 @@
 #include <stdio.h>
 int main() {
     int a;
+    char grade;
     scanf("%d",&a);
     if (a>=90){
-        printf("A");
+        grade = A;
     }
     else if (90<a<=80){
-        printf("B");
+        grade = B;
     }
     else if (80<a<=70){
-        printf("C");
+        grade = C;
     }
     else if (70<a<=60){
-        printf("D");
+        grade = D;
     }
     else{
-        printf("F");
+        grade = F;
     }
+    printf("%c",grade)
     return 0;
 }
