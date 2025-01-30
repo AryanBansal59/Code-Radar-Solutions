@@ -24,7 +24,7 @@ int main() {
     }
     else
     {
-        printf("Invalid Grade");
+        printf("Invalid grade");
     }
     return 0;
 }
