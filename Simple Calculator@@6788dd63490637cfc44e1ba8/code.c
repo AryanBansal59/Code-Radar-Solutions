@@ -18,5 +18,8 @@ int main() {
         c = a/b;
         printf("%d",c);
     }
+    else{
+        printf("error");
+    }
     return 0;
 }
