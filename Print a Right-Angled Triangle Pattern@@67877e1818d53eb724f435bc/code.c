@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main() {
+void main() {
     int a,i,j;
     scanf("%d",&a);
     for (i=1; i<=a, i++){
@@ -7,5 +7,4 @@ int main() {
         printf("*");
         printf("\n");
     }
-    return 0;
 }
