@@ -16,8 +16,13 @@ int main() {
         printf("%d",c);
     }
     else if(strcmp(oper == '/')==0){
-        c = a/b;
-        printf("%d",c);
+        if (b!=0){
+            c = a/b;
+            printf("%d",c)
+        }
+        else{
+            printf("error");
+        }
     }
     else{
         printf("error");
