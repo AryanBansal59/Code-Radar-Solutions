@@ -3,7 +3,6 @@ int main() {
     int a,i,j,space;
     scanf("%d",&a);
     for (i=1;i<=a;i++){
-        for 
         for (j=2*i-1){
             printf("*");
         }
