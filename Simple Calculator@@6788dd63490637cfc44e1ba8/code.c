@@ -17,10 +17,11 @@ int main() {
     else if(oper=='/'){
         if (b!=0){
             c = a/b;
-            printf("%d",c)
+            printf("%d",c);
         }
         else{
             printf("error");
+            
         }
     }
     else{
