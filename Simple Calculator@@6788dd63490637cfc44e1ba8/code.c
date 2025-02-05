@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <string.h>
 int main() {
-    int a,b,c;char oper[100];
-    scanf("%d %d %s",&a,&b,oper);
-    if (strcmp(oper,'+')==0){
+    int a,b,c;char oper;
+    scanf("%d %d %c",&a,&b,oper);
+    if (oper=='+'){
         c = a+b;
         printf("%d",c);
     }
-    else if (strcmp(oper, '-')==0){
+    else if (oper=='-'){
         c = a-b;
         printf("%d",c);
     }
-    else if (strcmp(oper,'*')==0){
+    else if (oper=='*'){
         c = a*b;
         printf("%d",c);
     }
-    else if(strcmp(oper,'/')==0){
+    else if(oper=='/'){
         if (b!=0){
             c = a/b;
             printf("%d",c)
