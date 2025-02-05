@@ -3,8 +3,8 @@ int main() {
     int a,i,j;
     char ch;
     scanf("%d",&a);
-    ch = 'A';
     for (i=1;i<=a;i++){
+        ch = 'A';
         for (j=1;j<=i;j++){
             printf("%c ",ch);
             ch++;
