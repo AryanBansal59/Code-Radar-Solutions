@@ -1,19 +1,22 @@
 #include <stdio.h>
 int main(){
-    int a,i;
-    int factors = 0;
-    if (n<=1){
+    int a;
+    int b = 0;
+    scanf("%d",&a);
+    if (a<=1){
         printf("Not Prime");
     }
     else{
-        for (i=1;i<=a;i++){
+        for (int i=1;i<=a;i++){
             if (n%i==0)
-                factors++;
-        }            
-        if (factors>2)
-            printf("Not Prime");
-        else    
-            printf("Prime");
+                b++;
+        }
+    }
+    if (b>2){
+        printf("Not Prime");
+    }
+    else{
+        printf("Prime");
     }
     return 0;
 }
