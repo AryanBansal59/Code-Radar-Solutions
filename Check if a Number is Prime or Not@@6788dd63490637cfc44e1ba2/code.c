@@ -11,7 +11,8 @@ int main(){
                 b++;
             if (b>2)
                 printf("Not Prime");
-            else    printf("Prime");
+            else    
+                printf("Prime");
         }
     }
     return 0;
