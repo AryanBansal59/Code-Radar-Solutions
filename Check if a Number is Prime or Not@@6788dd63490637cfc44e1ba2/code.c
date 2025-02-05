@@ -8,8 +8,8 @@ int main(){
     else{
         for (i=1;i<=a;i++){
             if (n%i==0)
-                b++;
-            if (b>2)
+                factors++;
+            if (factors>2)
                 printf("Not Prime");
             else    
                 printf("Prime");
