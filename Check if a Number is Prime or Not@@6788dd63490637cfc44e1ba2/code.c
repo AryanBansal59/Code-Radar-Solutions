@@ -9,11 +9,11 @@ int main(){
         for (i=1;i<=a;i++){
             if (n%i==0)
                 factors++;
-            if (factors>2)
-                printf("Not Prime");
-            else    
-                printf("Prime");
-        }
+        }            
+        if (factors>2)
+            printf("Not Prime");
+        else    
+            printf("Prime");
     }
     return 0;
 }
