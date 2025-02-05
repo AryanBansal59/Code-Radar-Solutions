@@ -9,6 +9,7 @@ int main() {
         for (j=2;j<=a;j+=2){
             printf("0");
         }
+        printf("\n");
     }
     return 0;
 }
