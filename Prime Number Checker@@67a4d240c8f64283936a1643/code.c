@@ -13,7 +13,7 @@ int isPrime(int a);
 //     }
 //     return 0;
 // }
- int isPrime(int n){
+int isPrime(int n){
     int i,count=0;
     for (i=1;i<=n;i++){
         if (n%i==0){
