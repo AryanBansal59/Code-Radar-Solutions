@@ -20,5 +20,11 @@ int isPrime(int n){
             count++;
         }
     }
-    return count;
+    if (count == 2){
+        return 1;
+    }
+    else{
+
+        return 0;
+    }
 }
