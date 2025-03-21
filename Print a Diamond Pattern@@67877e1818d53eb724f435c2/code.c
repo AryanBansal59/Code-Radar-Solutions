@@ -10,7 +10,12 @@ int main(){
             printf("*");
         }
         for (int m = a-1; m>=1; m--){
-            printf("*");
+            for (int n = 1; n<=a-i; n++){
+                printf(" ");
+            }
+            for (int g = 1; g<=(2*i-1); g++){
+                printf("*");
+            }
         }
         printf("\n");
     }
