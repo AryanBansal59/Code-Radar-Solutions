@@ -28,5 +28,6 @@ int main(){
     }
     int n = a;
     bubbleSort(arr,n);
-    printf("%d",arr[n-2]);
+    int secondlargest = findsecondlargest(arr,n);
+    printf("%d",secondlargest);
 }
