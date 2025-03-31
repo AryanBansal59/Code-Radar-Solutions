@@ -1,39 +1,24 @@
 #include <stdio.h>
-
-int main() {
-    int n, k;
-    scanf("%d", &n); // Read number of elements
-    int arr[100]; // Declare array
-
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]); // Read input elements
+int main(){
+    int a,k;
+    scanf("%d",&a);
+    int arr[100];
+    for (int i = 0; i < a; i++){
+        scanf("%d",&arr[i]);
     }
-
-    scanf("%d", &k); // Read rotation count
-    k = k % n; // Handle cases where k > n
-
-    // Create a temporary array to store rotated elements
+    scanf("%d",&k);
+    k = k % a;
     int temp[100];
-
-    // Copy the last k elements to the beginning of temp
-    for (int i = 0; i < k; i++) {
-        temp[i] = arr[n - k + i];
+    for (int i = 0; i < k; i++){
+        arr[i] = temp[a-k+i];
     }
-
-    // Copy the remaining elements
-    for (int i = k; i < n; i++) {
-        temp[i] = arr[i - k];
+    for (int i = k; i < a; i++){
+        arr [i] = temp[i-k];
     }
-
-    // Copy temp back to arr
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++){
         arr[i] = temp[i];
     }
-
-    // Print the rotated array
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", arr[i]);
+    for (int i = 0; i < n; i++){
+        printf("%d\n",arr[i]);
     }
-
-    return 0;
 }
