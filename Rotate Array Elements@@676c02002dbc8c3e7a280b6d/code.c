@@ -15,10 +15,10 @@ int main(){
     for (int i = k; i < a; i++){
         arr [i] = temp[i-k];
     }
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < a; i++){
         arr[i] = temp[i];
     }
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < a; i++){
         printf("%d\n",arr[i]);
     }
 }
