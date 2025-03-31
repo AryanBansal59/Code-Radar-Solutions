@@ -7,7 +7,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
     scanf("%d",&k);
+    k = k % a;
     for (int j = 0; j < a; j++){
-        printf("%d ",arr[j+k]);
+        printf("%d ",arr[(j+k)%a]);
     }
 }
