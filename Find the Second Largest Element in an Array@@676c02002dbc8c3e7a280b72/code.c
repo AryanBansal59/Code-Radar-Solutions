@@ -19,5 +19,5 @@ int main(){
     }
     int n = a;
     bubbleSort(arr,n);
-    printf("%d",arr[n-1]);
+    printf("%d",arr[n-2]);
 }
