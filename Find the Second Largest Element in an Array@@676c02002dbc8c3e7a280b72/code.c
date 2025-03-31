@@ -10,6 +10,15 @@ void bubbleSort(int arr[], int n){
         }
     }
 }
+int findsecondlargest(int arr[], int n){
+    int largest = arr[n-1];
+    for (int i = n-1; i>=0; i++){
+        if arr[i] < largest{
+            return arr[i];
+        }
+    }
+    return -1;
+}
 int main(){
     int a;
     scanf("%d",&a);
