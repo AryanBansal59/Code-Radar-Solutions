@@ -14,7 +14,7 @@ int main(){
         }
     }
     for (int k = 1; k < a; k++){
-        if (arr[k] > arr[0]){
+        if (arr[k] < arr[0]){
             min = arr[k];
         }
     }
