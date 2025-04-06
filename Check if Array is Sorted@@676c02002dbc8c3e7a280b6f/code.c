@@ -1,7 +1,7 @@
 #include <stdio.h>
 int checksort(int arr[], int n){
     for (int i = 0; i < n; i++){
-        if (arr[j] <= arr[j+1]){
+        if (arr[i] <= arr[i+1]){
             continue;
         }
         else{
