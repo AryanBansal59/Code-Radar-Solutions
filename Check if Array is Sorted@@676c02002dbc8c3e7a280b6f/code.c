@@ -1,4 +1,16 @@
 #include <stdio.h>
+int checksort(int arr[], int n){
+    for (int i = 0; i < n; i++){
+        if (arr[j] <= arr[j+1]){
+            continue;
+        }
+        else{
+            return -1;
+            break;
+        }
+    }
+    return 1;
+}
 int main(){
     int a;
     scanf("%d",&a);
@@ -6,13 +18,11 @@ int main(){
     for (int i = 0; i < a; i++){
         scanf("%d",&arr[i]);
     }
-    for (int j = 0; j < a; j++){
-        if (arr[j] <= arr[j+1]){
-            continue;
-        }
-        else{
-            printf("Not Sorted");
-            break;
-        }
+    int r = checksort(arr,a);
+    if (r==1){
+        printf("Sorted");
+    }
+    else{
+        printf("Not Sorted");
     }
 }
