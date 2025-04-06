@@ -8,9 +8,10 @@ int main(){
     }
     int k;
     scanf("%d",&k);
+    k = k % a;
     int temp[100];
     for (int i = 0; i < k; i++){
-        temp[i] = arr[a-i+k];
+        temp[i] = arr[a-k+i];
     }
     for (int i = k; i < a; i++){
         temp[i] = arr[i-k];
