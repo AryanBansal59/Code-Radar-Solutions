@@ -15,7 +15,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int target;
-    scanf("%d",&target)
+    scanf("%d",&target);
     int index = findindex(arr,a,target);
     printf("%d",index);
 }
