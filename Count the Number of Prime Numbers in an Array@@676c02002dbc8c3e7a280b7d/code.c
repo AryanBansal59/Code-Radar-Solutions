@@ -10,12 +10,16 @@ int main(){
     for (int i = 0; i < a; i++){
         if (arr[i]>1){
             for (int j = 2; j < a; j++){
+                int factors = 0;
                 if ((arr[i] % j) == 0){
-                    count++;
+                    factors++;
                 }
                 else{
                     continue;
                 }
+            }
+            if (factors == 1){
+                count++;
             }
         }
         else{
