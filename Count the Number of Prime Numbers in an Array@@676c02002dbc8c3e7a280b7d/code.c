@@ -17,9 +17,9 @@ int main(){
                 else{
                     continue;
                 }
-            }
-            if (factors == 1){
+                if (factors == 1){
                 count++;
+            }
             }
         }
         else{
