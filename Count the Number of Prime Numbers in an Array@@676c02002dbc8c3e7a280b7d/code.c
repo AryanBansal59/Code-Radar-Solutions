@@ -8,15 +8,17 @@ int main(){
     }
     int count = 0;
     for (int i = 0; i < a; i++){
+        if (arr[i] > 1){
         int factors = 0;
         for (int j = 2; j < arr[i]; j++){
-            if (arr[i] % j == 0){
-                factors++;
-            }
+        if (arr[i] % j == 0){
+            factors++;
         }
-        if (factors == 0){
-            count++;
-        }
+    }
+    if (factors == 0){
+        count++;
+    }
+    }
     }
     printf("%d",count);
 }
