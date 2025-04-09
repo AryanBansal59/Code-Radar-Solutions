@@ -8,6 +8,7 @@ int main(){
     }
     int result[100];
     for (int i = 0; i < a; i++){
+        int sum = 0;
         int temp = arr[i];
         while (temp>0){
             int b = temp % 10;
