@@ -10,7 +10,7 @@ int main(){
     for (int i = 0; i < a; i++){
         while (a>0){
             int sum = 0;
-            b = a % 10;
+            int b = a % 10;
             sum += b;
             a /= 10;
         }
