@@ -14,7 +14,7 @@ int main(){
                 factors++;
             }
         }
-        if (factors == 1){
+        if (factors == 0){
             count++;
         }
     }
