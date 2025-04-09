@@ -10,7 +10,7 @@ int main(){
     for (int i = 0; i < a; i++){
         int factors = 0;
         for (int j = 2; j < arr[i]; j++){
-            if (arr[i] % 2 == 0){
+            if (arr[i] % j == 0){
                 factors++;
             }
         }
