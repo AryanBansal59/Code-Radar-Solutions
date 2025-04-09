@@ -8,11 +8,11 @@ int main(){
     }
     int result[100];
     for (int i = 0; i < a; i++){
-        int sum = 0;
-        while (a>0){
-            int b = a % 10;
+        int temp = arr[i];
+        while (temp>0){
+            int b = temp % 10;
             sum += b;
-            a /= 10;
+            temp /= 10;
         }
         result[i] = sum;
     }
