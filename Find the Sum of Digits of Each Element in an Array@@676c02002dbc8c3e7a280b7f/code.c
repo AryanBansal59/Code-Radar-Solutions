@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
     int a;
     scanf("%d",&a);
@@ -9,7 +10,7 @@ int main(){
     int result[100];
     for (int i = 0; i < a; i++){
         int sum = 0;
-        int temp = arr[i];
+        int temp = abs(arr[i]);
         while (temp>0){
             int b = temp % 10;
             sum += b;
