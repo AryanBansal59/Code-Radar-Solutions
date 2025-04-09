@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     if (a % 2 == 0){
-        c = (arr[a/2] + arr[(a/2) + 1])/2;
+        c = (arr[a/2 -1] + arr[a/2])/2;
     }
     else{
          c = arr[a/2];
