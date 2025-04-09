@@ -9,4 +9,5 @@ int main(){
     if (a % 2 == 0){
         int c = (arr[a/2] + arr[a/2 + 1])/2;
     }
+    printf("%d",c);
 }
