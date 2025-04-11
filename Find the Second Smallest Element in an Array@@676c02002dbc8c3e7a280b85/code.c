@@ -10,6 +10,16 @@ void bubblesort(int arr[], int n){
         }
     }
 }
+int secondsmallest(int arr[], int n){
+    int smallest = arr[0];
+    for (int i = 0; i < n; i++){
+        if (arr[i] != smallest){
+            return arr[i];
+            break;
+        }
+    }
+    return -1;
+}
 int main(){
     int a;
     scanf("%d",&a);
@@ -18,11 +28,6 @@ int main(){
         scanf("%d",&arr[i]);
     }
     bubblesort(arr,a);
-    int smallest = arr[0];
-    for (int i = 0; i < a-1; i++){
-        if (arr[i] != smallest){
-            printf("%d",arr[i]);
-            break;
-        }
-    }
+    int n = secondsmallest(arr,a);
+    printf("%d",n);
 }
