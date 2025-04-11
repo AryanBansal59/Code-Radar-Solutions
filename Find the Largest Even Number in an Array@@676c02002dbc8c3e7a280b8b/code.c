@@ -14,7 +14,7 @@ int main(){
         }
     }
     int evenarr[b];
-    for (int i = 0; i < a; i++){
+    for (int i = 0; i < n; i++){
         if (arr[i] % 2==0){
             evenarr = arr[i];
         }
