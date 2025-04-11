@@ -10,14 +10,6 @@ void bubblesort(int arr[], int n){
         }
     }
 }
-int printarray(int arr[], int n){
-    for (int i = 0; i < n; i++){
-        if (arr[i] < arr[i+1]){
-            return arr[i];
-        }
-    }
-    return -1;
-}
 int main(){
     int a;
     scanf("%d",&a);
@@ -26,6 +18,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     bubblesort(arr,a);
-    int x = printarray(arr,a);
-    printf("%d",x);
+    for (int i = 0; i < a; i++){
+        if (arr[i] < arr[i+1]){
+            printf("%d",arr[i]);
+        }
+    }
 }
