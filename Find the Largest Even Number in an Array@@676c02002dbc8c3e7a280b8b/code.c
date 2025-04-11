@@ -7,17 +7,12 @@ int main(){
     for (int i = 0; i < n; i++){
         scanf("%d",&arr[i]);
     }
-    int b = 0;
     for (int i = 0; i < n; i++){
         if (arr[i] % 2 == 0){
-           b++;
+            if (abs(arr[i]) > maxeven){
+                maxeven = arr[i];
+            }
         }
     }
-    int evenarr[b];
-    for (int i = 0; i < n; i++){
-        if (arr[i] % 2==0){
-            evenarr = arr[i];
-        }
-    }
-    printf("%d",evenarr[b-1]);
+    printf("%d",maxeven);
 }
